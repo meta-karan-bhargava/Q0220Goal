@@ -1,0 +1,26 @@
+docker info
+docker run -i -t debian /bin/bash - Create a Container and enter its shell
+docker run -h CONTAINER1 -i -t debian /bin/bash - Create a container with a name
+docker run -h CONTAINER2 -i -t --net="bridge" debian /bin/bash - Create a container with a Networking mode
+docker run
+docker run -it --entrypoint, --entrypoint to specify entrypoint/override entry point
+docker run -it --publish-ala, --publish-all to make this visible to outside 
+docker ps -a -q ,-a for all, -q to print only container ids
+docker ps -l, to list last one
+docker inspect CONTAINER_NAME - Inspect a Container
+docker start [CONTAINER_NAME] - Start a Stopped Container
+docker attach CONTAINER_NAME - Enter the Shell of a Started Container
+docker logs CONTAINER_NAME - Docker Logs
+docker pause CONTAINER_NAME - Pause a Container
+docker unpause CONTAINER_NAME - unpause
+docker network ls - List Docker Networks
+docker rename big_hamilton big_hamilton_v1 - Rename a Docker Container
+docker rm container id
+docker images - show images
+docker rmi <image name> command to remove images
+docker search <name> checks for image in registry
+docker diff - when container run in interactive mode, used to specify changes b/w image and container
+docker commit <container-Id> <new-image> crates a new image with container additive changes to previous versions organises
+docker tag <new image Id> <imagName>
+docker history <imageId>
+*****Detaching from the container without stopping Ctrl-P Ctrl-Q*****
